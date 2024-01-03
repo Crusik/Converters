@@ -17,7 +17,6 @@
             if (document.forms["myTempC"]["degreeC"].value !== '') {
                 let inputTempC = document.forms["myTempC"]["degreeC"].value;
                 let tempF = (inputTempC * 9 / 5 + 32).toFixed(2) + " ℉";
-                // console.log(typeof(inputTempC));
                 document.forms["myTempF"]["degreeF"].value = tempF;
             } else {
                 document.forms["myTempF"]["degreeF"].value = '';
@@ -25,7 +24,7 @@
         }
 
         function convertCToK() {
-            // If input is nothing, then nothing will output.accordion
+            // If input is nothing, then nothing will output.
             if (document.getElementById('degreeC').value !== '') {
                 let inputTempC = document.getElementById('degreeC').value;
                 let tempK = (parseInt(inputTempC) + 273.15).toFixed(2) + " K";
@@ -34,16 +33,6 @@
                 document.forms["myTempK"]["degreeK"].value = '';
             }
         }
-        // function convertCToK() {
-        //     // If input is nothing, then nothing will output.accordion
-        //     if (document.forms["myTempC"]["degreeC"].value !== '') {
-        //         let inputTempC = document.forms["myTempC"]["degreeC"].value;
-        //         let tempK = (parseInt(inputTempC) + 273.15).toFixed(2) + " K";
-        //         document.forms["myTempK"]["degreeK"].value = tempK;
-        //     } else {
-        //         document.forms["myTempK"]["degreeK"].value = '';
-        //     }
-        // }
 
         /*Function to take user input in Fahrenheit and convert it to Celsius
         Then round it to the nearest tenth. Then display.*/
@@ -101,9 +90,6 @@
                 document.getElementById('Metriclength').value = '';
             }
         }
-        // let input = document.getElementById('unitOne');
-        // let unitOne;
-
 
         function convertMtoFT() {
             if (document.getElementById('Metriclength').value !== '') {
@@ -166,28 +152,6 @@
                 input === number;
             }
         }
-
-        // function wrapper() {
-        //     let unitOne = document.getElementById('unitOne');
-        //     let unitTwo = document.getElementById('unitTwo');
-        // }
-        // // convert(USlength, Metriclength, feetToMeters)
-
-
-        // let usLength = document.getElementById('USlength');
-        // let metricLength = document.getElementById('Metriclength');
-        // let feetToMeters = (usLength * 0.3048).toFixed(2) + " M";
-
-        // function convert(unitOne, unitTwo, conversion) {
-        //     unitOne = document.getElementById("unitOne").value;
-        //     unitTwo = document.getElementById("unitTwo").value;
-        //     if (unitOne !== '') {
-        //         let unitConverted = conversion;
-        //         unitTwo = unitConverted;
-        //     } else {
-        //         unitTwo = '';
-        //     }
-        // }
     </script>
     <title>Converters v3.0</title>
 </head>
